@@ -1,0 +1,73 @@
+/* ====== Main - "Page d'Accueil" ====== */
+
+
+.main-bloc{
+    padding: 140px 0px 157px;
+    text-align: center;
+    backdrop-filter: saturate(20%);
+    width: 100%;
+}
+
+main h1{
+    font-weight: 500;
+    font-size: 52px;
+    margin: 0 auto;
+    width: 80%;
+    color: white;
+}
+
+h1 span{
+    display: inline-block;
+    background: linear-gradient(#6AA7EE, #0047FF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main h2{
+    font-weight: 500;
+    font-size: 31px;
+    padding-top: 2.5rem;
+    padding-bottom: 3.5rem;
+    color: white;
+}
+
+
+main .link-prestation{
+    font-weight: 700;
+    font-size: 20px;
+    padding: 20px 10px;
+    border: 0px;
+    border-radius: 30px;
+    background: linear-gradient(#6AA7EE, #0047FF);
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+/* =========> Media Query <========= */
+
+
+/* ==== Vue tablette  ==== */
+
+@media screen and (max-width: 1120px){
+    
+    .main-bloc{
+        padding: 95px 0px 95px;
+    }
+
+    main h1{
+        font-size: 35px;
+    }
+
+    main h2{
+        font-size: 22px;
+    }
+
+    main .link-prestation{
+        font-size: 18px;
+        padding: 13px 10px;
+    }
+}
+

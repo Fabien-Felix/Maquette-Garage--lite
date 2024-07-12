@@ -1,0 +1,231 @@
+/* ====== Main - "Page de Prestation" ====== */
+
+
+/* Container 1  */
+
+.container1{
+    height: 133px;
+    background-color: #6AA7EE;
+    text-align: center;
+    padding: 42px 0px;
+    color: white;
+}
+
+.container1 h1{
+    font-size: 36px;
+} 
+
+
+/* Container 2 and 4 (row-reverse in Container 4) */
+
+.container2, .container4{
+    height: 362px;
+    background-color:black;
+    opacity: 95%;
+    color: white;
+}
+
+.container2 h2{
+    padding: 20px 20px 0;
+    font-size: 27px;
+}
+
+.bloc-atelier{
+    display: flex;
+    justify-content: center;
+    margin: 22px auto;
+    gap: 60px;
+}
+
+.bloc-atelier img{
+    width: 35%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.infos{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+}
+
+.infos h3{
+    font-size: 20px;
+}
+
+.infos p{
+    font-size: 18px;
+}
+
+/* -------------- */
+
+
+.container4 h2{
+    font-size: 27px;
+    padding: 20px 20px 0;
+    text-align: right;
+}
+
+.bloc-pneumatique{
+    display: flex;
+    justify-content: center;
+    margin: 22px auto;
+    gap: 60px;
+    flex-direction: row-reverse;
+}
+
+.bloc-pneumatique img{
+    width: 35%;
+    height: 260px;
+    object-fit: cover;
+}
+
+
+/* Container 3 */
+
+.container3{
+    height: 340px;
+    background-color: #6AA7EE;
+}
+
+.container3 h2{
+    text-align: center;
+    padding: 20px 0 0;
+    font-size: 27px;
+}
+
+.bloc-entretien{
+    margin: 45px auto;
+    display: flex;
+    justify-content: center;
+    gap: 190px;
+}
+
+.bloc-entretien h3{
+    font-size: 20px;
+}
+
+.bloc-entretien ul{
+    padding-top: 18px;
+    padding-left: 30px;
+}
+
+.bloc-entretien li{
+    padding-bottom: 10px;
+}
+
+
+/* Container 5 */
+
+.container5{
+    height: 450px;
+    background-color: #6AA7EE;
+}
+
+.container5 h2{
+    text-align: center;
+    padding: 20px 0 0;
+    font-size: 27px;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    padding: 30px 15px;
+}
+
+.form-nom-prenom{
+    display: flex;
+    gap: 20px;
+}
+
+.form-column{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+input{
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+label{
+    padding-bottom: 10px;
+    color: #666666;
+}
+
+.form-mail-message{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type='submit']{
+    width: 102px;
+    height: 38px;
+    margin: 28px auto 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 20px;
+    background: linear-gradient(#6AA7EE, #0047FF);
+    color: white;
+}
+
+
+/* =========> Media Query <========= */
+
+
+/* ==== Vue tablette  ==== */
+
+@media screen and (max-width: 1140px){
+
+    /* Container 1 */
+
+    .container1 h1{
+        font-size: 32px;
+    } 
+
+    /* Container 2 and 4 */
+
+    .bloc-atelier, .bloc-pneumatique{
+        gap: 40px;
+    }
+
+    .infos h3{
+        font-size: 18px;
+    }
+    
+    .infos p{
+        font-size: 16px;
+    }
+
+    /* Container 3 */
+
+    .bloc-entretien{
+        margin: 45px 25px;
+        gap: 90px;
+    }
+
+    /* Container 5 */
+
+    .container5{
+        height: 545px;
+    }
+
+    form{
+        width: 65%;
+    }
+
+    .form-nom-prenom{
+        flex-direction: column;
+    }
+
+
+}

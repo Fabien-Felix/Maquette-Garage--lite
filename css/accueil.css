@@ -1,0 +1,8 @@
+/* ====== Body - "Page d'Accueil""  ====== */
+
+body{
+    background-image: url(/img/voituregrise.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}

@@ -1,0 +1,133 @@
+/* ====== Footer - "Page de Prestation" + "Page de Qui sommes nous ?"  ====== */
+
+footer{
+    width: 100%;
+}
+
+.foot-bloc{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 22px;
+    background: black;
+    height: 7rem;
+    opacity: 95%;
+    overflow: hidden;
+}
+
+.foot-logo{
+    background-image: url(/img/garage-elite-logo-longuer.png);
+    background-repeat: no-repeat;
+    height: 128%;
+    width: 25%;
+    background-position: center;
+}
+
+.visit-and-social{
+    display: flex;
+    gap: 50px;
+}
+
+
+.schedule-adresse{
+    display: flex;
+    gap: 50px;
+    padding-bottom: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.schedule-adresse h3{
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+    color: white;
+    font-weight: 400;
+}
+
+.schedule-adresse p{
+    padding-top: 5px;
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
+}
+
+.schedule{
+    text-align: center;
+}
+
+.address{
+    text-align: center;
+}
+
+.address .first-bloc{
+    display: flex;
+    gap: 25px;
+}
+
+.address .second-bloc{
+    display: flex;
+    gap: 33px;
+}
+
+
+.social-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px 25px;
+}
+
+.social-logo .logo{
+    display: flex;
+    gap: 35px;
+}
+
+.logo i{
+    font-size: 38px;
+    color: white;
+}
+
+.social-logo p{
+    font-size: 11px;
+    padding-top: 15px;
+    color: white;
+}
+
+
+/* =========> Media Query <========= */
+
+
+/* ==== Vue tablette ==== */
+
+@media screen and (max-width: 1120px){
+
+    .foot-bloc{
+        flex-direction: column;
+        height: 20rem;
+    }
+
+    .foot-logo{
+        width: 100%;
+    }
+
+    .visit-and-social{
+        flex-direction: column;
+        gap: 0px;
+    }
+
+}
+
+
+/* ==== Vue mobile ==== */
+
+@media screen and (max-width: 445px){
+
+    .foot-bloc{
+        height: 28.5rem;
+    }
+
+    .social-logo{
+        padding: 15px 0px 25px;
+    }
+    
+}

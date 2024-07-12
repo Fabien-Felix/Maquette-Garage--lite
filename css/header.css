@@ -1,0 +1,128 @@
+/* ======  Header and Navbar - "Page d'Accueil"  ====== */
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 6.7rem;
+    width: 100%;
+    padding: 0rem 5rem;
+    background: black;
+    opacity: 85%;
+}
+
+.head-bloc{
+    display: flex;
+}
+
+.head-bloc img{
+    height: 107px;
+}
+
+nav ul{
+    display: flex;
+    gap: 4rem;
+    padding-top: 2.8rem;
+    padding-left: 4rem;
+    list-style-type: none;
+}
+
+nav li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav li a:hover{
+    text-decoration: underline;
+}
+
+header .mail{
+    height: 42px;
+    width: 220px;
+    text-align: center;
+    padding: 9px;
+    margin-top: 2.1rem;
+    font-weight: 700;
+    font-size: 20px;
+    border: 0px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 5px rgb(0 0 0 / 20%);
+    background: linear-gradient(#6AA7EE, #0047FF);
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+/* =========> Media Query <========= */
+
+
+/* ==== Vue tablette  ==== */
+
+@media screen and (max-width: 1120px){
+
+    header{
+        flex-direction: column;
+        align-items: center;
+        height: 14rem;
+        padding: 0;
+    }
+
+    .head-bloc{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .head-bloc img{
+        width: 110px;
+    }
+
+    nav ul{
+        padding-left: 0;
+        padding-top: 0.9rem;
+        flex-wrap: wrap;
+    }
+
+    header .mail{
+        margin-top: 23px;
+        margin-bottom: auto;
+        height: 38px;
+        width: 202px;
+        font-size: 18px;
+    }
+}
+
+
+/* ==== Vue mobile ==== */
+
+@media screen and (max-width: 550px){
+
+    header{
+        height: 17.5rem;
+    }
+
+    nav ul{
+        gap: 2rem;
+        justify-content: center;
+        padding: 0.8rem 6rem;
+    }
+
+    nav li a{
+        font-size: 16px;
+    }
+
+    header .mail{
+        font-size: 17px;
+        width: 185px;
+        height: 38px;
+        margin-top: 18px;
+    }
+}
+
+@media screen and (max-width: 377px){
+
+    nav ul{
+        padding: 0.8rem 0rem;
+    }   
+}
