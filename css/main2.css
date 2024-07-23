@@ -176,6 +176,7 @@ input[type='submit']{
     border-radius: 20px;
     background: linear-gradient(#6AA7EE, #0047FF);
     color: white;
+    cursor: pointer;
 }
 
 
@@ -208,9 +209,14 @@ input[type='submit']{
 
     /* Container 3 */
 
+
     .bloc-entretien{
         margin: 45px 25px;
         gap: 90px;
+    }
+
+    .bloc-entretien h3{
+        font-size: 18px;
     }
 
     /* Container 5 */
@@ -226,6 +232,118 @@ input[type='submit']{
     .form-nom-prenom{
         flex-direction: column;
     }
+}
 
+
+/* ==== Vue mobile ==== */
+
+@media screen and (max-width: 660px){
+    
+    /* Container 1 */
+
+    .container1{
+        height: 112px;
+    }
+
+    .container1 h1{
+        font-size: 23px;
+    } 
+
+    /* Container 2 and 4 */
+    
+    .container2{
+        height: 625px;
+    }
+
+    .container2 h2{
+        font-size: 22px;
+    }
+
+    .bloc-atelier{
+        flex-direction: column;
+        gap: 25px;
+        margin: 22px 25px;
+    }
+
+    .bloc-atelier img{
+        width: 100%;
+    }
+
+    .infos{
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    /* -------------- */
+
+    .container4{
+        height: 572px;
+    }
+
+    .container4 h2{
+        font-size: 20px;
+    }
+
+    .bloc-pneumatique{
+        flex-direction: column;
+        gap: 25px;
+        margin: 22px 25px;
+    }
+
+    .bloc-pneumatique img{
+        width: 100%;
+    }
+
+    /* Container 3 */
+
+    .container3{
+        height: 480px;
+    }
+
+    .container3 h2{
+        font-size: 22px;
+    }
+
+    .bloc-entretien{
+        flex-direction: column;
+        gap: 38px;
+        text-align: center;
+    }
+
+    .bloc-entretien ul{
+        padding-left: 0;
+        list-style-type: none;
+    }
+
+    .bloc-entretien li{
+        padding-bottom: 6px;
+    }
+
+    /* Container 5 */
+
+    .container5 h2{
+        font-size: 22px;
+    }
+
+    form{
+        width: 95%;
+    }
+
+}
+
+
+@media screen and (max-width: 350px){
+
+    /* Container 2 */
+
+    .container2{
+        height: 660px;
+    }
+
+    /* Container 3 */
+
+    .container3{
+        height: 585px;
+    }
 
 }
