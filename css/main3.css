@@ -1,0 +1,170 @@
+/* ====== Main - "Page de Qui sommes nous?" ====== */
+
+
+/* Container-card */
+
+main{
+    height: 31.9rem;
+    background-color: #D3DFEC;
+}
+
+.container-card{
+    display: flex;
+    justify-content: center;
+    padding-top: 75px;
+}
+
+.bloc-card{
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+    height: 197px;
+    width: 35rem;
+    background-color: #6AA7EE;
+    color: white;
+}
+
+.bloc-card img{
+    width: 158px;
+    height: 195px;
+}
+
+.infos-card{
+    width: 25rem;
+    padding: 10px;
+}
+
+.infos-card h2{
+    font-size: 32px;
+    line-height: 35px;
+}
+
+.infos-card p{
+    font-size: 14px;
+    padding-top: 10px;
+    line-height: 18px;
+}
+
+
+/* Container-chiffres */
+
+.container-chiffres{
+    padding: 55px 100px 0;
+}
+
+.container-chiffres h2{
+    font-size: 27px;
+}
+
+.bloc-chiffre{
+    display: flex;
+    padding: 40px 0px;
+    gap: 40px;
+    width: 90%;
+    margin: auto;
+}
+
+.inside-bloc h3{
+    font-size: 18px;
+}
+
+.inside-bloc p {
+    padding-top: 5px;
+}
+
+hr{
+    border: 1px solid;
+}
+
+
+/* =========> Media Query <========= */
+
+
+/* ==== Vue tablette  ==== */
+
+@media screen and (max-width: 1120px){
+
+    /* Container-card */
+
+    main{
+        height: 45.9rem;
+        background-color: #D3DFEC;
+    }
+
+    .infos-card h2{
+        font-size: 28px;
+    }
+
+
+    /* Container-chiffres */
+
+    .container-chiffres{
+        padding: 55px 60px 0;
+    }
+
+    .container-chiffres h2{
+        font-size: 25px;
+    }
+
+    .bloc-chiffre{
+        flex-direction: column;
+        gap: 30px;
+        padding: 50px 0px 0px;
+        text-align: center;
+    }
+
+    .inside-bloc h3{
+        font-size: 17px;
+    }
+}
+
+
+/* ==== Vue mobile ==== */
+
+@media screen and (max-width: 625px){
+
+    /* Container-card */
+
+    main{
+        height: 56rem;
+    }
+
+    .container-card{
+        padding-top: 0;
+    }
+
+    .bloc-card{
+        flex-direction: column;
+        height: 398px;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .infos-card{
+        width: 100%;
+        padding: 25px 10px;
+    }
+
+}
+
+
+@media screen and (max-width: 500px){
+
+    /* Container-card */
+
+    main{
+        height: 60rem;
+    }
+
+    .bloc-card{
+        height: 450px;
+    }
+
+
+    /* Container-chiffres */
+
+    .container-chiffres{
+        padding: 55px 20px 0;
+    }
+}
